@@ -144,14 +144,66 @@ function App() {
         </form>
       </section>
 
-      {/* Footer */}
-      <footer style={{ borderTop: '1px solid #111', padding: '2rem', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-        <p>&copy; 2026 VIROX. All rights reserved.</p>
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', marginTop: '1rem' }}>
-          <a href="#" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Instagram</a>
-          <a href="#" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Tiktok</a>
-          <a href="#" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Terms</a>
+      {/* Updated Footer Section */}
+      <footer style={{ 
+        borderTop: '1px solid #111', 
+        padding: '3rem 2rem', 
+        backgroundColor: '#050505',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '1.5rem'
+      }}>
+        <div style={{ 
+          fontSize: '1.4rem', 
+          fontWeight: '900', 
+          letterSpacing: '2px', 
+          color: '#fff' 
+        }}>
+          VIROX<span style={{ color: 'var(--accent-color)' }}>.</span>
         </div>
+        
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'center', 
+          gap: '2rem', 
+          flexWrap: 'wrap' 
+        }}>
+          <a 
+            href="mailto:virox.gr@gmail.com" 
+            style={{ 
+              color: 'var(--text-secondary)', 
+              textDecoration: 'none',
+              fontSize: '0.95rem',
+              fontWeight: '500',
+              transition: 'color 0.3s'
+            }}
+            onMouseOver={(e) => e.target.style.color = 'var(--accent-color)'}
+            onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}
+          >
+            virox.gr@gmail.com
+          </a>
+          <a 
+            href="https://www.tiktok.com/@virox.gr" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            style={{ 
+              color: 'var(--text-secondary)', 
+              textDecoration: 'none',
+              fontSize: '0.95rem',
+              fontWeight: '500',
+              transition: 'color 0.3s'
+            }}
+            onMouseOver={(e) => e.target.style.color = 'var(--accent-color)'}
+            onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}
+          >
+            TikTok
+          </a>
+        </div>
+
+        <p style={{ color: '#444', fontSize: '0.8rem', marginTop: '1rem' }}>
+          &copy; 2026 VIROX. All rights reserved.
+        </p>
       </footer>
 
     </div>
